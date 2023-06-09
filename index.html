@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rock, Paper and Scissors</title>
+</head>
+
+<body>
+  <button onclick="
+      computerMoveValue = Math.random();
+      console.log(computerMoveValue);
+      if(computerMoveValue > 0 && computerMoveValue <= 0.33) {
+        computerMove = 'rock';
+        console.log(computerMove);
+      }
+
+      else if(computerMoveValue > 0.33 && computerMoveValue <= 0.67) {
+        computerMove = 'paper';
+        console.log(computerMove);
+      }
+
+      else if(computerMoveValue > 0.67 && computerMoveValue <= 1) {
+        computerMove = 'scissors';
+        console.log(computerMove);
+      }
+
+      if (computerMove === 'rock'){
+        console.log('Tie');
+      }
+      else if (computerMove === 'paper'){
+        console.log('You lose');
+      }
+      else {
+        console.log('You win');
+      }
+
+      ">Rock</button>
+
+  <button onclick="
+    computerMoveValue = Math.random();
+    console.log(computerMoveValue);
+      if(computerMoveValue > 0 && computerMoveValue <= 0.33) {
+        computerMove = 'rock';
+        console.log(computerMove);
+      }
+
+      else if(computerMoveValue > 0.33 && computerMoveValue <= 0.67) {
+        computerMove = 'paper';
+        console.log(computerMove);
+      }
+
+      else if(computerMoveValue > 0.67 && computerMoveValue <= 1) {
+        computerMove = 'scissors';
+        console.log(computerMove);
+      }
+      
+      if (computerMove === 'paper'){
+        console.log('Tie');
+      }
+      else if (computerMove === 'scissors'){
+        console.log('You lose');
+      }
+      else {
+        console.log('You win');
+      }
+      ">Paper</button>
+
+  <button onclick="
+  computerMoveValue = Math.random();
+  
+  console.log(computerMoveValue);
+    if(computerMoveValue > 0 && computerMoveValue <= 0.33) {
+      computerMove = 'rock';
+      console.log(computerMove);
+    }
+
+    else if(computerMoveValue > 0.33 && computerMoveValue <= 0.67) {
+      computerMove = 'paper';
+      console.log(computerMove);
+    }
+
+    else if(computerMoveValue > 0.67 && computerMoveValue <= 1) {
+      computerMove = 'scissors';
+      console.log(computerMove);
+    }
+    if (computerMove === 'scissors'){
+        console.log('Tie');
+      }
+      else if (computerMove === 'rock'){
+        console.log('You lose');
+      }
+      else {
+        console.log('You win');
+      }
+      ">Scissors</button>
+</body>
+
+<script>
+  let computerMove = '';
+  let computerMoveValue = '';
+</script>
+
+</html>
